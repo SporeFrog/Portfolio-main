@@ -51,6 +51,9 @@ nav a{
   text-decoration: none;
   color:#f9c74f;
 }
+nav a:hover{
+  color:#fdffb6;
+}
 h1{
   margin-top:0;
   color: white;
