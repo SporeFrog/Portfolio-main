@@ -1,13 +1,14 @@
 body{
   margin:0;
-  font-family:'roboto' sans-serif;
-  color: white;
+  font-family:'open sans'sans-serif;
+  color:#091112;
 }
 
 header{
-  background-image:url(/images/spacebackground.jpg);
+  background-image:url(/images/leafybackground.jpg);
   background-size:cover;
-  background-position-y: -400px;
+  background-repeat: no-repeat;
+  background-position-y: ;
   height: 100vh;
   text-align: center;
   display: flex;
@@ -16,13 +17,16 @@ header{
   flex-direction: column;
   position: relative;
   box-shadow: 0px 5px 5px black;
+  position: relative;
   
 }
+
+
 nav{
   margin-top:0;
   position: absolute;
   top:1rem;
-  font-family:"secular One", sans-serif;
+  font-family:'volkhov', serif;
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -41,52 +45,53 @@ nav li{
     display: inline-block;
     padding-left:20px;
     padding-right:20px;
-    /* border: 1px solid white;
-    color:white; */
     padding:1rem;
     margin: 0 2rem auto 2rem;
 }
 
 nav a{
   text-decoration: none;
-  color:#f9c74f;
+  color:#CCC5B9;
 }
 nav a:hover{
-  color:#fdffb6;
+  color:#cad2c5;
 }
 h1{
   margin-top:0;
-  color: white;
+  color:#FFFCF2;
   font-size:4rem;
-  font-family:"secular One", sans-serif;  
+  font-family:'volkhov', serif; 
 }
 .title-icon{
   font-size: 2rem;
+  color:#FFFCF2;
 }
 
+
 h2{
-  color:white;
+  color:#FFFCF2;
   margin-top:0;
   font-size:1.5rem;
-  font-family:"roboto",sans-serif;
+  font-family:'volkhov', serif;
 }
 
 .who{
   text-align:center;
-  background-color:#3f37c9;
+  background-color:#CCC5B9;
   padding:3% 5% 3% 5%;
-  height: 70vh;
+  height: 87vh;
   line-height: 1.5;
-  font-family:"roboto",sans-serif;
+  font-family:'open sans'sans-serif;
 
 }
 
 .who h2{
-  font-family:"secular One", sans-serif; 
+  font-family:'volkhov', serif;
+  color:#091112;
 }
 
 .header-divider{
-  border-bottom: 5px dotted white;
+  border-bottom: 5px dotted #091112;
   height: 0px;
   width: 30%;
 }
