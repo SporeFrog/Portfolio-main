@@ -123,3 +123,34 @@ header h3{
   height: 0px;
   width: 30%;
 }
+
+@media (max-width:780px) {
+ body{
+   margin-left:0;
+ }
+  h1{
+    font-size: 2.5rem;
+  }
+  .selfie{
+    width: 100px;
+    height:100px;
+    margin-top:1rem;
+  }
+  header{
+    position: relative;
+  }
+  header h2{
+    font-size:1rem;
+  }
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li{
+    display: block;
+  
+  }
+
+  
+}
