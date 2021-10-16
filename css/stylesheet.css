@@ -58,6 +58,7 @@ nav{
 }
 .pageLink{
   text-decoration: none;
+   color: inherit;
 }
 .pageLink:visited{
   color: inherit;
