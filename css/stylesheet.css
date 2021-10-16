@@ -9,7 +9,7 @@ nav{
   display:flex;
   justify-content: space-between;
   margin:0rem 2rem 0rem 2rem;
-  padding:2rem;
+  padding:2rem 2rem 0 2rem;
   color:#F3BA58;
   
 }
@@ -79,7 +79,7 @@ header{
   background-position-y:-2000px ;
   margin:0 2rem 0 2rem;
   padding-top:4rem;
-  padding-bottom:6rem;
+  padding-bottom:2rem;
   color:#122112;
   display:flex;
   justify-content: space-around;
