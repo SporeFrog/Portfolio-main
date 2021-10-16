@@ -97,12 +97,14 @@ h1{
   border-right:2px dotted #122112;
   padding-right:10rem;
   padding-left:10rem;
+  padding-top:5rem;
   height:40rem;
   display:flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   font-family: 'Scherezade New', serif;
+  
  
   
 }
@@ -118,12 +120,12 @@ h1{
 }
 .about{
   text-align:center;
-  padding: 2rem 9rem 2rem 9rem;
+  padding: 2rem 5rem 2rem 5rem;
   display: flex;
   flex-direction:column;
   justify-content: start;
   align-items: center;
-  font-size:1.5rem;
+  font-size:1.2rem;
   line-height: 1.5;
   
 }
