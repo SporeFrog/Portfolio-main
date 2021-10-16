@@ -5,7 +5,6 @@ body{
 
 }
 
-
 nav{
   display:flex;
   justify-content: space-between;
@@ -13,6 +12,9 @@ nav{
   padding:2rem;
   color:#F3BA58;
   
+}
+nav a{
+  color: #F3BA58;
 }
 .pages{
   display:flex;
