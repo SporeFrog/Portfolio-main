@@ -38,6 +38,7 @@ nav{
 
 .pageItem{
   transition: .5s ease-in-out;
+  color:#F3BA58;;
 }
 .pageItem:hover{
   color:#457DFF;
