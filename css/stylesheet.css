@@ -40,7 +40,7 @@ nav a{
 
 .pageItem{
   transition: .5s ease-in-out;
-  color:#F3BA58;;
+  color:#F3BA58;
 }
 .pageItem:hover{
   color:#457DFF;
@@ -85,6 +85,7 @@ header{
   justify-content: space-around;
   /* align-items: center; */
   position: relative;
+  box-shadow: 10px 10px 5px #122112;
   
 }
 
@@ -131,4 +132,14 @@ h1{
   font-family:'Scherezade New', serif;
   border-bottom: 1px dotted black;
   padding-bottom: .5rem;
+}
+
+.frogIcon{
+  font-size:3rem;
+  transition: all 1s ease-in-out;
+}
+
+.frogIcon:hover{
+  color:#14ee14;
+  transform: scale(2);
 }
