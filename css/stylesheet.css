@@ -9,7 +9,7 @@ nav{
   display:flex;
   justify-content: space-between;
   margin:0rem 2rem 0rem 2rem;
-  padding:2rem 2rem 0 2rem;
+  padding:0rem 2rem 0 2rem;
   color:#F3BA58;
   
 }
@@ -32,11 +32,7 @@ nav a{
 .pageItem{
   margin-left: 2rem;
   font-size:1.5rem;
-  
-  
-  
 }
-
 
 .pageItem{
   transition: .5s ease-in-out;
@@ -76,14 +72,12 @@ color:inherit;
 header{
   text-align:center;
   background-color:#F9F2DD;
-  background-position-y:-2000px ;
   margin:0 2rem 0 2rem;
   padding-top:4rem;
-  padding-bottom:2rem;
+  padding-bottom:0;
   color:#122112;
   display:flex;
   justify-content: space-around;
-  /* align-items: center; */
   position: relative;
   box-shadow: 10px 10px 5px #122112;
   
@@ -98,22 +92,16 @@ h1{
   padding-right:10rem;
   padding-left:10rem;
   padding-top:5rem;
-  height:40rem;
+  max-height:40rem;
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   font-family: 'Scherezade New', serif;
   
  
   
 }
-.profilePic{
-  border-radius: 100%;
-  border:1px dotted black;
-  height: 12rem;
-  width: 12rem;
-}
+
 .pageSubTitle{
   margin-top:5rem;
   font-size:3rem;
@@ -144,4 +132,8 @@ h1{
 .frogIcon:hover{
   color:#14ee14;
   transform: scale(2);
+}
+
+@media screen  {
+  
 }
