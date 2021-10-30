@@ -8,9 +8,12 @@ display: flex;
 justify-content: center;
 border-bottom: black 1px solid;
 align-items: center;
+
 }
+
 .hidden{
-  display:none;
+  display: none;
+ 
 }
 
 .navList{
@@ -35,6 +38,9 @@ align-items: center;
   font-size: 10rem;
   margin-left:1rem;
   animation: color-change 5s infinite;
+}
+#toggleButton{
+  margin:0;
 }
 @keyframes color-change {
  0% {color:#264653}
@@ -78,4 +84,11 @@ h1{
   right:1rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width:515px){
+  header{
+    flex-direction:column;
+    justify-content: space-around;
+  }
 }

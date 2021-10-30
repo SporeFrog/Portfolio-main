@@ -1,13 +1,14 @@
 function toggleNav(){
  
-  if(document.querySelector(".navContainer").classList.contains("hidden")){
-    document.querySelector(".navContainer").classList.remove("hidden");
-     document.querySelector(".toggler").innerHTML = '<i class="fas fa-arrow-up"></i>';
+  if(document.querySelector("nav").classList.contains("hidden")){
+    document.querySelector('nav').classList.remove("hidden");
+    document.querySelector('#toggleButton').innerHTML = '<i class="fas fa-arrow-up"></i>';
   }else{
-    document.querySelector(".navContainer").classList.add("hidden");
-    document.querySelector(".toggler").innerHTML = '<i class="fas fa-arrow-down"></i>';
+    document.querySelector("nav").classList.add("hidden");
+    document.querySelector('#toggleButton').innerHTML = '<i class="fas fa-arrow-down"></i>';
   }
 }
 
+document.querySelector('#toggleButton').addEventListener("click", toggleNav);
 
-document.querySelector(".toggler").addEventListener("click", toggleNav);
+
