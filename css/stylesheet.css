@@ -4,6 +4,7 @@ html{
 body{
   margin:0;
   font-family:'Roboto', sans-serif;
+  position:relative;
   
  
 
@@ -15,16 +16,19 @@ body::-webkit-scrollbar{
 nav{
 display: flex;
 justify-content: center;
-border-bottom: black 1px solid;
+border-bottom: #f0e6ef 1px dotted;
 align-items: center;
-background-color:#33415c;
-color:#ffe1a8;
-
+background-color:#0c0014;
+color:#f0e6ef;
+position: absolute;
+top:0;
+transition: 1s ease-in-out;
+width:100vw;
 }
 
 .hidden{
-  display:none;
- 
+
+ top:-5rem;
 }
 
 .navList{
@@ -36,6 +40,7 @@ color:#ffe1a8;
   display:flex;
   justify-content: space-around;
   height:100%;
+  width:100%;
   
 }
 
@@ -48,26 +53,27 @@ color:#ffe1a8;
 .titleImage{
   font-size: 10rem;
   margin-left:1rem;
-  animation: color-change 3s infinite;
+  animation: color-change 1s infinite;
+  border-radius:50%;
 }
 #toggleButton{
   margin:0;
 }
 .blinker{
-  animation: blink 1s infinite; 
+  animation: blink 1.5s infinite; 
 }
 @keyframes blink {
-  0%{color: #33415c}
-  50%{color:#ffe1a8}
-  100%{color:#33415c}
+  0%{color: rgb(255, 255, 255, 0)}
+  50%{color:#f0e6ef}
+  100%{color: rgb(255, 255, 255, 0)}
   
 }
 @keyframes color-change {
- 0%{color:#007f5f}
- 25%{color:#2b9348}
- 50%{color:#55a630}
- 75%{color:#2b9348}
- 100%{color:#007f5f}
+ 0%{color:#f0e6ef;}
+ /* 25%{color:#343a40} */
+ 50%{color:#52b69a}
+ /* 75%{color:#343a40} */
+ 100%{color:#f0e6ef}
 }
 header{
   text-align: center;
@@ -79,8 +85,11 @@ header{
   align-items: center;
   height: 90vh;
   position: relative;
-  background-color:#33415c;
-  color: #ffe1a8;
+ background-image: url(/images/layered-desktop.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position-y: -2rem;
+  color: #f0e6ef;
   
 }
 
@@ -96,7 +105,7 @@ h1{
 
 .toggler{
   position: absolute;
-  top:1rem;
+  top:5rem;
   right:1rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -108,5 +117,6 @@ main{
   header{
     flex-direction:column;
     justify-content: space-around;
+    background-image: url(/images/layered-phone.svg);
   }
 }
