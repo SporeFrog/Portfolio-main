@@ -2,7 +2,7 @@ html{
   scrollbar-width: none;
 }
 body{
-  margin:0 1rem;
+  margin:0;
   font-family:'Roboto', sans-serif;
   
  
@@ -17,6 +17,8 @@ display: flex;
 justify-content: center;
 border-bottom: black 1px solid;
 align-items: center;
+background-color:#33415c;
+color:#ffe1a8;
 
 }
 
@@ -46,23 +48,26 @@ align-items: center;
 .titleImage{
   font-size: 10rem;
   margin-left:1rem;
-  animation: color-change 5s infinite;
+  animation: color-change 3s infinite;
 }
 #toggleButton{
   margin:0;
 }
+.blinker{
+  animation: blink 1s infinite; 
+}
+@keyframes blink {
+  0%{color: #33415c}
+  50%{color:#ffe1a8}
+  100%{color:#33415c}
+  
+}
 @keyframes color-change {
- 0% {color:#264653}
- 10% {color:#2a9d8f}
- 20%{color:#e9c46a} 
- 30%{color: #f4a261}
- 40%{color: #e76f51}
- 50%{color: #ffe8d6}
- 60%{color: #e76f51}
- 70%{color: #f4a261}
- 80%{color:#e9c46a} 
- 90% {color:#2a9d8f}
- 100% {color:#264653}
+ 0%{color:#007f5f}
+ 25%{color:#2b9348}
+ 50%{color:#55a630}
+ 75%{color:#2b9348}
+ 100%{color:#007f5f}
 }
 header{
   text-align: center;
@@ -74,6 +79,8 @@ header{
   align-items: center;
   height: 90vh;
   position: relative;
+  background-color:#33415c;
+  color: #ffe1a8;
   
 }
 
@@ -94,7 +101,9 @@ h1{
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+main{
+  margin: 0 2rem;
+}
 @media (max-width:515px){
   header{
     flex-direction:column;
