@@ -1,6 +1,15 @@
+html{
+  scrollbar-width: none;
+}
 body{
   margin:0 1rem;
   font-family:'Roboto', sans-serif;
+  
+ 
+
+}
+body::-webkit-scrollbar{
+  display:none;
 }
 
 nav{
@@ -12,7 +21,7 @@ align-items: center;
 }
 
 .hidden{
-  display: none;
+  display:none;
  
 }
 
