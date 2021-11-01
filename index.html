@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stylesheet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <script src="https://kit.fontawesome.com/4bc2c0c0d8.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="/css/stylesheet.css">
- <link rel="stylesheet" href="https://sporefrog.github.io/Portfolio-main/css/stylesheet.css">
- <link rel="stylesheet" href="css/stylesheet.css">
   <title>Aaron Schilling Portfolio</title>
+  <link rel="shortcut icon" type="ico" href="/images/favicon.ico">
 </head>
 <body>
-  
-  <nav>
-<ul class="pages">
-  <li class="pageItem" id="homeIcon"><a  class="pageLink" href="index.html"><i class="fas fa-home"></a></i></li>
-  <li class="pageItem"><a class="pageLink" href="#">Projects</a></li>
-  <li class="pageItem"><a class="pageLink" href="#">Contact</a></li>
-</ul>
-<ul class="socials">
-  <li class="socialItem"><a class="socialLink" href="https://twitter.com/frostwaker5" target="_blank"><i class="fab fa-twitter"></a></i></li>
-  <li class="socialItem"><a class="socialLink" href="https://www.linkedin.com/in/aaron-schilling-734936164/" target="_blank"><i class="fab fa-linkedin"></a></i></li>
-  <li class="socialItem"><a class="socialLink" href="https://github.com/SporeFrog" target="_blank"><i class="fab fa-github"></a></i></li>
-  <li class="socialItem"><a id="mailLink" href="#"><i class="fas fa-envelope"></a></i></li>
-</ul>
-  </nav>
+ 
   <header>
     <div class="pageTitle">
-    <h1>Aaron Schilling</h1>
-    <!-- <img class="profilePic" src="#" alt=""> -->
-    <p class="frogIcon"><i class="fas fa-frog"></i></p>
-    <h2 class="pageSubTitle">A Web Developer</h2>  
+<h1>Aaron Schilling</h1>
+<h2 class="pageSubTitle">Web Developer<span class="blinker">|</span></h2>
     </div>
+    <!-- <div class="titleImage">
+      <i class="fas fa-laptop-code"></i>
+    </div> -->
+    <div class="toggler">
+    <p id="toggleButton"><i  class="fas fa-arrow-down"></i></p>
+  </div>
+  <nav class="navContainer hidden">
     
-    <section class="about">
-      
-     <h3 class="subHeader">About Me</h3>
-     <p>My name is Aaron and I'm a self-taught web developer with a passion for learning new things and taking on new challenges. I started my web development journey in September 2021 and I'm working my way to becomea full-stack web developer. </p>
+    <ul class="navList">
+      <li class="navItem"><a href="#">Home</a></li>
+      <li class="navItem"><a href="#">Projects</a></li>
+      <li class="navItem"><a href="#">Blog</a></li>
+      <li class="navItem"><a href="#">Contact</a></li>
+    </ul>
 
-     <p>I'll be updating this website as I learn, but I wanted to put something out there instead of waiting to create the perfect website. I'm currently learning JS and trying to sharpen my CSS and HTML Skills.</p>
-
-     <p>If you have any suggestions on how to improve or want to connect feel free to reach out through my social media profiles in the top right corner!</p>
-    </section>
+</nav>
   </header>
-</div>
   <main>
-
+    <h2 class="sectionTitle">About Me</h2>
+    <img class="profilePic" src="images/chameleonsubstitute.jpg">
+<p>
+ Hi! I'm Aaron and I'm an up and coming fullstack web developer who is passionate about problem solving and learning new things.</p>
+ <p>
+  I started my coding journey this past September and in that time, I've taught myself HTML, CSS, and JavaScript. My next goal is to learn React and then start learning about backend web development. Thank you for checking out my website! 
+</p>
   </main>
-  
+  <footer>
+    <ul class="socialList">
+
+      <li class="socialItem"><a class="socialLink" href="https://twitter.com/frostwaker5" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a></li>
+
+      <li class="socialItem"><a class="socialLink" href="https://www.linkedin.com/in/aaron-schilling-734936164/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in"></i></a></li>
+
+      <li class="socialItem"><a class="socialLink" target ="_blank" href="https://github.com/SporeFrog" rel="noreferrer noopener"><i class="fab fa-github"></i></a></li>
+
+      <li class="socialItem"><a class="socialLink" href=""><i class="fas fa-envelope" rel="noreferrer noopener"></i></a></li>
+
+    </ul>
+  </footer>
+  <script src="/script.js"></script>
 </body>
 </html>
