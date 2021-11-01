@@ -95,7 +95,7 @@ header{
   align-items: center;
   height: 90vh;
   position: relative;
- background-image: url(/images/layered-desktop.svg);
+ /* background-image: url(/images/layered-desktop.svg); */
  background-image: url(https://sporefrog.github.io/Portfolio-main/images/layered-desktop.svg);
  background-repeat: no-repeat;
  background-size: cover;
@@ -176,7 +176,7 @@ footer{
   header{
     flex-direction:column;
     justify-content: space-around;
-    background-image: url(/images/layered-phone.svg);
+    /* background-image: url(/images/layered-phone.svg); */
     background-image: url(https://sporefrog.github.io/Portfolio-main/images/layered-phone.svg);
   }
   .navList{
