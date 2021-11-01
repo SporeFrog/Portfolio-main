@@ -16,7 +16,6 @@ body::-webkit-scrollbar{
 nav{
 display: flex;
 justify-content: center;
-border-bottom: #f0e6ef 1px dotted;
 align-items: center;
 background-color:#0c0014;
 color:#f0e6ef;
@@ -46,9 +45,24 @@ width:100vw;
 
 .navItem{
   margin: .5rem;
-  padding:.5rem 1.5rem;
-  font-size: 1.2rem;
+  flex:1;
+  font-size: 1.7rem;
   font-weight: 700;
+  border: white 1px solid;
+  border-radius:10px;
+  
+}
+.navItem a{
+  text-decoration: none;
+  color:inherit;
+}
+.navItem:hover{
+  background-color:#ca670250;
+  transition:.5s ease-in-out;
+}
+#toggleButton:hover{
+  background-color:#ca670250;
+
 }
 .titleImage{
   font-size: 10rem;
@@ -58,6 +72,8 @@ width:100vw;
 }
 #toggleButton{
   margin:0;
+  border: white 1px solid;
+  padding:.5rem;
 }
 .blinker{
   animation: blink 1.5s infinite; 
@@ -68,13 +84,7 @@ width:100vw;
   100%{color: rgb(255, 255, 255, 0)}
   
 }
-@keyframes color-change {
- 0%{color:#f0e6ef;}
- /* 25%{color:#343a40} */
- 50%{color:#52b69a}
- /* 75%{color:#343a40} */
- 100%{color:#f0e6ef}
-}
+
 header{
   text-align: center;
   margin-top:0;
@@ -92,6 +102,11 @@ header{
   color: #f0e6ef;
   
 }
+.sectionTitle{
+  font-family: 'Bitter', serif;
+  border-bottom: 2px black solid;
+  width: auto;
+}
 
 h1{
   margin-top:0;
@@ -105,18 +120,79 @@ h1{
 
 .toggler{
   position: absolute;
-  top:5rem;
+  top:1rem;
   right:1rem;
   font-size: 1.5rem;
   cursor: pointer;
+  
+}
+#toggleButton{
+  transition: .8s ease-in-out;
+}
+.togglerSlide{
+transform:translateY(3rem);
+
 }
 main{
-  margin: 0 2rem;
+  margin: 1rem 5rem;
+  text-align: center;
+  font-size:2rem;
+  padding:3rem;
+  line-height: 1.5;
 }
+.profilePic{
+  max-height: 18rem;
+  max-width: 18rem;
+  border-radius: 50%;
+}
+
+footer{
+  background-color: #0c0014;
+  color:white;
+}
+.socialList{
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom:0;
+  padding:1rem;
+}
+.socialItem{
+ margin: 0 2rem;
+}
+
+.socialLink{
+  color:inherit;
+  text-decoration: none;
+  font-size:3rem;
+}
+.socialItem:hover{
+  color:#ca6702;
+}
+
+
 @media (max-width:515px){
   header{
     flex-direction:column;
     justify-content: space-around;
     background-image: url(/images/layered-phone.svg);
   }
+  .navList{
+    flex-direction:column;
+  }
+  main{
+    margin:1rem 1rem;
+    font-size:1.5rem;
+  }
+  .profilePic{
+    height:12rem;
+    width: 12rem;
+  }
+  .hidden{
+    top: -20rem;
+  }
+  .togglerSlide{
+    transform:translateY(12rem);
+    
+    }
 }
