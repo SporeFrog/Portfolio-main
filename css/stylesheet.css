@@ -19,16 +19,17 @@ justify-content: center;
 align-items: center;
 background-color:#0c0014;
 color:#f0e6ef;
-position: absolute;
+position: static;
 top:0;
 transition: 1s ease-in-out;
 width:100vw;
+height: 4rem;
 }
 
-.hidden{
+/* .hidden{
 
  top:-5rem;
-}
+} */
 
 .navList{
   margin-top:0;
@@ -97,11 +98,21 @@ header{
   position: relative;
  /* background-image: url(/images/layered-desktop.svg); */
  background-image: url(https://sporefrog.github.io/Portfolio-main/images/layered-desktop.svg);
- background-repeat: no-repeat;
- background-size: cover;
+ background-size: 4
+00%;
  background-position-y: -2rem;
   color: #f0e6ef;
+  animation: bg-animation 5s infinite alternate;
   
+}
+
+@keyframes bg-animation{
+  0%{
+background-position: left;
+  }
+  100%{
+background-position: right;
+  }
 }
 .sectionTitle{
   font-family: 'Bitter', serif;
@@ -176,8 +187,9 @@ footer{
   header{
     flex-direction:column;
     justify-content: space-around;
-    /* background-image: url(/images/layered-phone.svg); */
     background-image: url(https://sporefrog.github.io/Portfolio-main/images/layered-phone.svg);
+    background-size: 400%;
+    animation: bg-animation;
   }
   .navList{
     flex-direction:column;
@@ -191,10 +203,10 @@ footer{
     width: 12rem;
   }
   .hidden{
-    top: -20rem;
-  }
+  transform: translateY(-100%)  
+}
   .togglerSlide{
-    transform:translateY(12rem);
+    transform:translateY(4rem);
     
     }
 }
